@@ -1,0 +1,185 @@
+/* সাধারণ স্টাইল */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* নেভিগেশন মেনু */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #667eea;
+}
+
+/* হোম সেকশন */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* বাটন */
+.btn {
+    background-color: white;
+    color: #667eea;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #667eea;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* সম্পর্কে সেকশন */
+.about {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #667eea;
+}
+
+.about-content {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* যোগাযোগ সেকশন */
+.contact {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #667eea;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* ফুটার */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+/* মোবাইল রেসপন্সিভ */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .about h2,
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+}
